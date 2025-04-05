@@ -1,0 +1,52 @@
+﻿//Задание 1
+int[] fibonachiNumbers = new int[8];
+
+fibonachiNumbers[0] = 0;
+fibonachiNumbers[1] = 1;
+fibonachiNumbers[2] = fibonachiNumbers[0] + fibonachiNumbers[1];
+fibonachiNumbers[3] = fibonachiNumbers[1] + fibonachiNumbers[2];
+fibonachiNumbers[4] = fibonachiNumbers[2] + fibonachiNumbers[3];
+fibonachiNumbers[5] = fibonachiNumbers[3] + fibonachiNumbers[4];
+fibonachiNumbers[6] = fibonachiNumbers[4] + fibonachiNumbers[5];
+fibonachiNumbers[7] = fibonachiNumbers[5] + fibonachiNumbers[6];
+
+
+//Задание 2
+string[] monthsOfYear = new string[12];
+
+monthsOfYear[0] = "January";
+monthsOfYear[1] = "February";
+monthsOfYear[2] = "March";
+monthsOfYear[3] = "April";
+monthsOfYear[4] = "May";
+monthsOfYear[5] = "June";
+monthsOfYear[6] = "July";
+monthsOfYear[7] = "August";
+monthsOfYear[8] = "September";
+monthsOfYear[9] = "October";
+monthsOfYear[10] = "November";
+monthsOfYear[11] = "December";
+
+
+//Задание 3
+int[,] array = {
+    { (int)Math.Pow(2, 1), (int)Math.Pow(3, 1), (int)Math.Pow(4, 1) },
+    { (int)Math.Pow(2, 2), (int)Math.Pow(3, 2), (int)Math.Pow(4, 2) },
+    { (int)Math.Pow(2, 3), (int)Math.Pow(3, 3), (int)Math.Pow(4, 3) },
+};
+
+
+//Задание 4
+double[][] jaggedArray = new double[3][];
+jaggedArray[0] = new double[5] { 1, 2, 3, 4, 5 };
+jaggedArray[1] = new double[2] { Math.E, Math.PI };
+jaggedArray[2] = new double[4] { Math.Log10(1), Math.Log10(10), Math.Log10(100), Math.Log10(1000) };
+
+//Задания 5-6
+int[] array1 = { 1, 2, 3, 4, 5 };
+int[] array2 = { 7, 8, 9, 10, 11, 12, 13 };
+
+Array.Copy(array1, 0, array2, 0, 3);
+
+Array.Resize(ref array1, array1.Length * 2);
+
